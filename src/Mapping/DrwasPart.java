@@ -46,7 +46,7 @@ public class DrwasPart extends JFrame{
         }
 
 
-        // TODO: FIX THIS CRAP!!!
+        // TODO: FIX THIS CRAP!!! Edit: Don't you dare touch it! It works as it is
 
     }
 }

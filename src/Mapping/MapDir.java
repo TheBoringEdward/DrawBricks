@@ -32,10 +32,10 @@ public class MapDir {
         map[11] = "      1      ";
         map[12] = "             ";
         map[13] = "    1   1    "; // This is cancer.
-        map[14] = "     111     ";
+        map[14] = "     111     "; // I really wish there'd be a better way to save maps.
         map[15] = "             ";
         map[16] = "             ";
-        map[17] = "             "; // TODO: Save maps as individual classes, such as to "easily" change them.
+        map[17] = "             ";
         map[18] = "             ";
         map[19] = "             ";
         map[20] = "             ";
@@ -50,7 +50,7 @@ public class MapDir {
 
     String map_House(int i){
 
-        map[0]  = "             "; // topmost left corner always gets drawn for some reason, even though its value is 0
+        map[0]  = "             ";
         map[1]  = "      11     ";
         map[2]  = "      11     ";
         map[3]  = "     1  1    ";
@@ -63,11 +63,11 @@ public class MapDir {
         map[10] = "   1      1  ";
         map[11] = "   1      1  ";
         map[12] = "   1      1  ";
-        map[13] = "   1 1  1 1  "; // This is cancer.
+        map[13] = "   1 1  1 1  ";
         map[14] = "   1 1  1 1  ";
         map[15] = "   1 1    1  ";
         map[16] = "   11111111  ";
-        map[17] = "             "; // TODO: Save maps as individual classes, such as to "easily" change them.
+        map[17] = "             ";
         map[18] = "             ";
         map[19] = "             ";
         map[20] = "             ";

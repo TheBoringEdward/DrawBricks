@@ -46,8 +46,6 @@ public class Map2 extends JFrame{
         br1.draw(g);
          */
 
-        // TODO: Use some sort of grid to save the map layout.
-
         // For some reason the program fails to load properly sometimes for some godforsaken reason. I swear this PC is cursed!
     }
 
