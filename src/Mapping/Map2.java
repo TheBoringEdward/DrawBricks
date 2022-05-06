@@ -11,43 +11,18 @@ public class Map2 extends JFrame{
     int maxX = 13;
     int maxY = maxX * 2;
     int[][] map = new int [maxX][maxY]; // "memory" for the map
-    String[] mapA = new String[maxY]; // actual map saved as string
+    //String[] mapA = new String[maxY]; // actual map saved as string
 
     DrwasPart br1 = new DrwasPart( strtX, strtY, sz);
+    MapDir smM = new MapDir();
 
     public void draw(){
 
-        mapA[0]  = "0000000000000";
-        mapA[1]  = "0000000000000";
-        mapA[2]  = "0000000000000";
-        mapA[3]  = "0000000000000";
-        mapA[4]  = "0000000000000";
-        mapA[5]  = "0000000000000";
-        mapA[6]  = "0000000000000";
-        mapA[7]  = "0000000000000";
-        mapA[8]  = "0000000000000";
-        mapA[9]  = "0000000000000";
-        mapA[10] = "0000000000000";
-        mapA[11] = "0000000000000";
-        mapA[12] = "0000000000000";
-        mapA[13] = "0000000000000"; // This is cancer.
-        mapA[14] = "0000000000000";
-        mapA[15] = "0000000000000";
-        mapA[16] = "0000000000000";
-        mapA[17] = "0000000000000"; // TODO: Save maps as individual classes, such as to "easily" change them.
-        mapA[18] = "0000000000000";
-        mapA[19] = "0000000000000";
-        mapA[20] = "0000000000000";
-        mapA[21] = "0000000000000";
-        mapA[22] = "0000000000000";
-        mapA[23] = "0000000000000";
-        mapA[24] = "0000000000000";
-        mapA[25] = "0000000000000";
-
         for (int i = 0; i < maxX; i++){
             for (int j = 0; j < maxY; j++){
-                map[i][j] = 1;
+                map[i][j] = Character.getNumericValue(smM.map_Smiley(j).charAt(i));
                 // have to use "getCharAt" shenanigans
+                //Character.getNumericValue(keyrep.charAt(i - e))
             }
         }
 
@@ -60,6 +35,7 @@ public class Map2 extends JFrame{
                 br1.draw(g);
             }
         }
+
         /*
         br1.draw(g);
         br1 = new DrwasPart(strtX + sz * 2, strtY, sz);
