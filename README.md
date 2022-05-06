@@ -38,7 +38,7 @@ Beinhaltet die "Dateien" für die Bilder die in `Map2` gezeichnet werden.
 
 ---
 
-Jegliche Klasse markiert als Hauptklasse kann eigens außgeführt werden. (Ich bin mir bewusst, daß dies unnötig war niederzuschreiben, aber man kann ja nie wissen.)
+Jegliche Klasse markiert als Hauptklasse kann eigens ausgeführt werden. (Ich bin mir bewusst, daß dies unnötig war niederzuschreiben, aber man kann ja nie wissen.)
 
 ---
 
