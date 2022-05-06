@@ -44,3 +44,7 @@ Jegliche Klasse markiert als Hauptklasse kann eigens außgeführt werden. (Ich b
 
 **Anmerkung:**
 Aus irgend einem Grund zeichnen die Programme `Map1` und `Map2` immer eine Mauer links oben. Ich habe keine Ahnung wie dies vorkommt. Muß wohl verhext sein.
+
+---
+
+-Eddy
