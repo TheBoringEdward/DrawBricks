@@ -18,32 +18,64 @@ public class MapDir {
 
     String map_Smiley(int i){
 
-        map[0]  = "0000000000000"; // topmost left corner always gets drawn for some reason, even though its value is 0
-        map[1]  = "0000000000000";
-        map[2]  = "0000000000000";
-        map[3]  = "0000000000000";
-        map[4]  = "0000000000000";
-        map[5]  = "0000000000000";
-        map[6]  = "0000100010000";
-        map[7]  = "0001010101000";
-        map[8]  = "0001010101000";
-        map[9]  = "0000100010000";
-        map[10] = "0000000000000";
-        map[11] = "0000001000000";
-        map[12] = "0000000000000";
-        map[13] = "0000100010000"; // This is cancer.
-        map[14] = "0000011100000";
-        map[15] = "0000000000000";
-        map[16] = "0000000000000";
-        map[17] = "0000000000000"; // TODO: Save maps as individual classes, such as to "easily" change them.
-        map[18] = "0000000000000";
-        map[19] = "0000000000000";
-        map[20] = "0000000000000";
-        map[21] = "0000000000000";
-        map[22] = "0000000000000";
-        map[23] = "0000000000000";
-        map[24] = "0000000000000";
-        map[25] = "0000000000001";
+        map[0]  = "             "; // topmost left corner always gets drawn for some reason, even though its value is 0
+        map[1]  = "             ";
+        map[2]  = "             ";
+        map[3]  = "             ";
+        map[4]  = "             ";
+        map[5]  = "             ";
+        map[6]  = "    1   1    ";
+        map[7]  = "   1 1 1 1   ";
+        map[8]  = "   1 1 1 1   ";
+        map[9]  = "    1   1    ";
+        map[10] = "             ";
+        map[11] = "      1      ";
+        map[12] = "             ";
+        map[13] = "    1   1    "; // This is cancer.
+        map[14] = "     111     ";
+        map[15] = "             ";
+        map[16] = "             ";
+        map[17] = "             "; // TODO: Save maps as individual classes, such as to "easily" change them.
+        map[18] = "             ";
+        map[19] = "             ";
+        map[20] = "             ";
+        map[21] = "             ";
+        map[22] = "             ";
+        map[23] = "             ";
+        map[24] = "             ";
+        map[25] = "            1";
+
+        return map[i];
+    }
+
+    String map_House(int i){
+
+        map[0]  = "             "; // topmost left corner always gets drawn for some reason, even though its value is 0
+        map[1]  = "      11     ";
+        map[2]  = "      11     ";
+        map[3]  = "     1  1    ";
+        map[4]  = "     1  1    ";
+        map[5]  = "    1    1   ";
+        map[6]  = "    1    1   ";
+        map[7]  = "   1      1  ";
+        map[8]  = "   11111111  ";
+        map[9]  = "  1111111111 ";
+        map[10] = "   1      1  ";
+        map[11] = "   1      1  ";
+        map[12] = "   1      1  ";
+        map[13] = "   1 1  1 1  "; // This is cancer.
+        map[14] = "   1 1  1 1  ";
+        map[15] = "   1 1    1  ";
+        map[16] = "   11111111  ";
+        map[17] = "             "; // TODO: Save maps as individual classes, such as to "easily" change them.
+        map[18] = "             ";
+        map[19] = "             ";
+        map[20] = "             ";
+        map[21] = "             ";
+        map[22] = "             ";
+        map[23] = "             ";
+        map[24] = "             ";
+        map[25] = "             ";
 
         return map[i];
     }

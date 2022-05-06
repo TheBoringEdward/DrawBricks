@@ -20,7 +20,7 @@ public class Map2 extends JFrame{
 
         for (int i = 0; i < maxX; i++){
             for (int j = 0; j < maxY; j++){
-                map[i][j] = Character.getNumericValue(smM.map_Smiley(j).charAt(i));
+                map[i][j] = Character.getNumericValue(smM.map_House(j).charAt(i));
                 // have to use "getCharAt" shenanigans
                 //Character.getNumericValue(keyrep.charAt(i - e))
             }
