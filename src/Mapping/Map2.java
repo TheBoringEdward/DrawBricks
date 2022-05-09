@@ -6,14 +6,13 @@ import java.awt.*;
 public class Map2 extends JFrame{
 
     int sz = 40; // size of the bricks
-    int strtX = 10; // starting position for X
-    int strtY = 40; // starting position for Y
-    int maxX = 13;
-    int maxY = maxX * 2;
+    int startX = 10; // starting position for X
+    int startY = 40; // starting position for Y
+    int maxX = 13; // limits amount of walls in x direction
+    int maxY = maxX * 2; // limits amount of walls in y direction
     int[][] map = new int [maxX][maxY]; // "memory" for the map
-    //String[] mapA = new String[maxY]; // actual map saved as string
 
-    DrwasPart br1 = new DrwasPart( strtX, strtY, sz);
+    DrwasPart br1 = new DrwasPart(startX, startY, sz); // class for saving maps on a string
     MapDir smM = new MapDir();
 
     public void draw(){
@@ -21,8 +20,6 @@ public class Map2 extends JFrame{
         for (int i = 0; i < maxX; i++){
             for (int j = 0; j < maxY; j++){
                 map[i][j] = Character.getNumericValue(smM.map_House(j).charAt(i));
-                // have to use "getCharAt" shenanigans
-                //Character.getNumericValue(keyrep.charAt(i - e))
             }
         }
 
@@ -30,31 +27,18 @@ public class Map2 extends JFrame{
         for (int i = 0; i < maxX; i++){
             for (int j = 0; j < maxY; j++){
                 if (map[i][j] == 1){
-                    br1 = new DrwasPart(strtX + sz * i, strtY + ((sz/2) * j), sz);
+                    br1 = new DrwasPart(startX + sz * i, startY + ((sz/2) * j), sz);
+                    br1.draw(g); //Moving this command up in the if-statement fixed the issue with the top left wall.
                 }
-                br1.draw(g);
             }
         }
-
-        /*
-        br1.draw(g);
-        br1 = new DrwasPart(strtX + sz * 2, strtY, sz);
-        br1.draw(g);    // IT FUCKING WORKS!!!
-        br1 = new DrwasPart(strtX + sz * 3, strtY + (sz/2), sz);
-        br1.draw(g);
-        br1 = new DrwasPart(strtX + sz * 13, strtY, sz); // 12
-        br1.draw(g);
-         */
-
-        // For some reason the program fails to load properly sometimes for some godforsaken reason. I swear this PC is cursed!
     }
 
     @Override public void paint(Graphics g){
-        setBackground(Color.white);
+        setBackground(Color.gray);
         draw();
     }
 
-    // main method
     public static void main(String[] args){
         Map2 m = new Map2();
         m.setSize(600,600);

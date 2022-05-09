@@ -3,7 +3,7 @@
 Alle Klassen und deren Funktionen:
 
 **DrwasOG (Hauptklasse):**  
-Zeichnet die Backsteintextur. Alle Befehle wurden hierbei "von Hand" gezeichnet.  
+Zeichnet die Backstein-Textur. Alle Befehle wurden hierbei "von Hand" gezeichnet.  
 (Entspricht Aufgabe Nr.1)
 
 **DrwasOG2 (Hauptklasse):**  
@@ -39,11 +39,6 @@ Beinhaltet die "Dateien" für die Bilder die in `Map2` gezeichnet werden.
 ---
 
 Jegliche Klasse markiert als Hauptklasse kann eigens außgeführt werden. (Ich bin mir bewusst, daß dies unnötig war niederzuschreiben, aber man kann ja nie wissen.)
-
----
-
-**Anmerkung:**
-Aus irgend einem Grund zeichnen die Programme `Map1` und `Map2` immer eine Mauer links oben. Ich habe keine Ahnung wie dies vorkommt. Muß wohl verhext sein.
 
 ---
 

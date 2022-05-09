@@ -12,7 +12,6 @@ public class DrwasPart extends JFrame{
     int wd;
     int hd;
 
-
     DrwasPart (int PosX, int PosY, int wi){
         this.PosX = PosX;
         this.PosY = PosY;
@@ -24,14 +23,11 @@ public class DrwasPart extends JFrame{
 
     public void draw(Graphics g){
 
-        // red background
         g.setColor(Color.red);
         g.fillRect(PosX, PosY, wi + 1, he);
 
-        // black lines
         g.setColor(Color.black);
-
-
+        // offset row of bricks
         for (int i = 4; i > 0; i--) {
             g.drawLine(PosX + (wd * i) - wd / 2, PosY + hd, PosX + (wd * i) - wd / 2, PosY + (hd * 2)); //vertical
             g.drawLine(PosX + (wd * i) - wd / 2, PosY + (hd * 3), PosX + (wd * i) - wd / 2, PosY + (hd * 4)); //vertical
@@ -45,8 +41,7 @@ public class DrwasPart extends JFrame{
             g.drawLine(PosX, PosY + (hd * (i - 1)), PosX + wi, PosY + (hd * (i - 1))); //horizontal
         }
 
-
-        // TODO: FIX THIS CRAP!!! Edit: Don't you dare touch it! It works as it is
+        // TODO: Might want to optimize texture drawing process. It works for now but it should only be a band-aid option.
 
     }
 }
