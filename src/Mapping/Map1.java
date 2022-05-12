@@ -9,7 +9,7 @@ public class Map1 extends JFrame{
 
     public void draw(){
         Graphics g = this.getGraphics();
-        br1.draw(g);
+        br1.draw(g, 1);
     }
 
     @Override public void paint(Graphics g){

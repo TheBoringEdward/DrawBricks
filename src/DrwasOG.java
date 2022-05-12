@@ -3,55 +3,50 @@ import javax.swing.*;
 
 public class DrwasOG extends JFrame{
 
-    private int PosX = 100;
-    private int PosY = 100;
-    private Graphics g;
-
-
-    private void draw(){
+    @Override public void paint(Graphics g){
+        setBackground(Color.white);
         g = this.getGraphics();
+
+        System.out.println("once");
+
+        // TODO: This gets drawn two time!!! WHY?!?!
 
         // red background
         g.setColor(Color.red);
-        g.fillRect(PosX, PosY, 40 + 1, 20);
+        int posY = 100;
+        int posX = 100;
+        g.fillRect(posX, posY, 40 + 1, 20);
 
         // black lines
         g.setColor(Color.black);
 
-        g.drawLine(PosX, PosY, 140, PosY);
-        g.drawLine(PosX, PosY + 5, 140, PosY + 5);
-        g.drawLine(PosX, PosY + 10, 140, PosY + 10);
-        g.drawLine(PosX, PosY + 15, 140, PosY + 15);
-        g.drawLine(PosX, PosY + 20, 140, PosY + 20);
-        g.drawLine(PosX, PosY, PosX, PosY + 5);
-        g.drawLine(PosX+10, PosY, PosX+ 10, PosY +5);
-        g.drawLine(PosX+20, PosY, PosX+ 20, PosY +5);
-        g.drawLine(PosX+30, PosY, PosX+ 30, PosY +5);
-        g.drawLine(PosX+40, PosY, PosX+ 40, PosY +5);
-        g.drawLine(PosX+5, PosY +5, PosX+ 5, PosY + 10);
-        g.drawLine(PosX+10, PosY +10, PosX+10, PosY + 15);
-        g.drawLine(PosX+15, PosY +5, PosX+15, PosY + 10);
-        g.drawLine(PosX+25, PosY +5, PosX+25, PosY + 10);
-        g.drawLine(PosX+35, PosY +5, PosX+35, PosY + 10);
-        g.drawLine(PosX+20, PosY +10, PosX+20, PosY + 15);
-        g.drawLine(PosX+30, PosY +10, PosX+30, PosY +15);
-        g.drawLine(PosX+40, PosY +10, PosX+40, PosY +15);
-        g.drawLine(PosX, PosY +10, PosX, PosY +15);
-        g.drawLine(PosX+5, PosY+15, PosX+5, PosY +20);
-        g.drawLine(PosX+15, PosY+15, PosX+15, PosY +20);
-        g.drawLine(PosX+25, PosY+15, PosX+25, PosY +20);
-        g.drawLine(PosX+35, PosY+15, PosX+35, PosY +20);
+        g.drawLine(posX, posY, 140, posY);
+        g.drawLine(posX, posY + 5, 140, posY + 5);
+        g.drawLine(posX, posY + 10, 140, posY + 10);
+        g.drawLine(posX, posY + 15, 140, posY + 15);
+        g.drawLine(posX, posY + 20, 140, posY + 20);
+        g.drawLine(posX, posY, posX, posY + 5);
+        g.drawLine(posX +10, posY, posX + 10, posY +5);
+        g.drawLine(posX +20, posY, posX + 20, posY +5);
+        g.drawLine(posX +30, posY, posX + 30, posY +5);
+        g.drawLine(posX +40, posY, posX + 40, posY +5);
+        g.drawLine(posX +5, posY +5, posX + 5, posY + 10);
+        g.drawLine(posX +10, posY +10, posX +10, posY + 15);
+        g.drawLine(posX +15, posY +5, posX +15, posY + 10);
+        g.drawLine(posX +25, posY +5, posX +25, posY + 10);
+        g.drawLine(posX +35, posY +5, posX +35, posY + 10);
+        g.drawLine(posX +20, posY +10, posX +20, posY + 15);
+        g.drawLine(posX +30, posY +10, posX +30, posY +15);
+        g.drawLine(posX +40, posY +10, posX +40, posY +15);
+        g.drawLine(posX, posY +10, posX, posY +15);
+        g.drawLine(posX +5, posY +15, posX +5, posY +20);
+        g.drawLine(posX +15, posY +15, posX +15, posY +20);
+        g.drawLine(posX +25, posY +15, posX +25, posY +20);
+        g.drawLine(posX +35, posY +15, posX +35, posY +20);
 
         // vertical lines, row 4
         // your task!
 
-        // TODO: FIX THIS CRAP!!!
-
-    }
-
-    @Override public void paint(Graphics g){
-        setBackground(Color.white);
-        draw();
     }
 
     // main method
@@ -62,7 +57,6 @@ public class DrwasOG extends JFrame{
         br.setTitle("Brick1");
         br.setVisible(true);
         br.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        br.draw();
     }
 }
 

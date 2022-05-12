@@ -4,12 +4,17 @@ package Mapping;
 
 public class MapDir {
 
-    int maxX = 13;
-    int maxY = maxX * 2;
+    int maxX;
+    int maxY;
+    String[] map;
 
-    String[] map = new String[maxY]; // Using a constructor to assign the value of maxX somehow causes the string to always register it as a zero,
-                                    // even though it gets picked up properly everywhere else. Solve one problem, ten more pop up. That's my curse.
-                                    // TODO: Fix constructor and String related issue.
+    MapDir(int maxX){
+        this.maxX = maxX;
+        System.out.println(this.maxX);
+        maxY = maxX * 2;
+        map = new String[maxY];
+    }
+
     String map_Smiley(int i){
 
         map[0]  = "             ";
@@ -45,31 +50,37 @@ public class MapDir {
     String map_House(int i){
 
         map[0]  = "             ";
-        map[1]  = "      11     ";
-        map[2]  = "      11     ";
-        map[3]  = "     1111    ";
-        map[4]  = "     1111    ";
-        map[5]  = "    111111   ";
-        map[6]  = "    111111   ";
-        map[7]  = "   11111111  ";
-        map[8]  = "   11111111  ";
-        map[9]  = "  1111111111 ";
-        map[10] = "   1      1  ";
-        map[11] = "   1      1  ";
-        map[12] = "   1      1  ";
-        map[13] = "   1 1  1 1  ";
-        map[14] = "   1 1  1 1  ";
-        map[15] = "   1 1    1  ";
-        map[16] = "   11111111  ";
-        map[17] = "ggggggggggggg"; // TODO: Possibly different textures, such as grass, sky, or wood?
-        map[18] = "             "; // "g" for placing grass perhaps?
-        map[19] = "             ";
-        map[20] = "             ";
-        map[21] = "             ";
-        map[22] = "             ";
+        map[1]  = "      33     ";
+        map[2]  = "      33     ";
+        map[3]  = "     3113    ";
+        map[4]  = "     3113    ";
+        map[5]  = "    311113   ";
+        map[6]  = "    311113   ";
+        map[7]  = "   31111113  ";
+        map[8]  = "   31111113  ";
+        map[9]  = "  3111111113 ";
+        map[10] = "   11111111  ";
+        map[11] = "   11111111  ";
+        map[12] = "   11111111  ";
+        map[13] = "   11411511  ";
+        map[14] = "   11411511  ";
+        map[15] = "   11411111  ";
+        map[16] = "   11611111  ";
+        map[17] = "2222222222222";
+        map[18] = "2222222222222";
+        map[19] = "2222222222222";
+        map[20] = "2222222222222";
+        map[21] = "2222222222222";
+        map[22] = "2222222222222";
         map[23] = "             ";
         map[24] = "             ";
         map[25] = "             ";
+
+        /*
+        for (int j = 0; j < maxY; j++){
+            map[j] = "             ";   // I don't understand what he is planning...
+        }
+         */
 
         return map[i];
     }
