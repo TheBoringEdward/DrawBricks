@@ -111,8 +111,5 @@ public class DrwasPart extends JFrame{
             g.fillRect(PosX, PosY, wi / 8, he);
             g.fillRect(PosX + ((wi / 8) * 7), PosY, wi / 8, he);
         }
-
-        // TODO: Might want to optimize texture drawing process. It works for now but it should only be a band-aid option.
-
     }
 }
